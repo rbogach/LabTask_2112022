@@ -1,0 +1,44 @@
+create a program that prints the mirror image of an n-dimensional identity matrix (where n is input by the user).
+An identity matrix is defined as a square matrix with 1's running from the top left of the square to the bottom right. The rest are 0's. The identity matrix has applications ranging from machine learning to the general theory of relativity.
+Examples of identity matrix
+Input  : 2
+Output : 1 0
+         0 1
+Copy
+Input :  4
+Output : 1 0 0 0
+         0 1 0 0
+         0 0 1 0
+         0 0 0 1
+Copy
+
+Here is the code that generates an nxn identity matrix:-
+
+                print()
+                print("Identity matrix")
+                for row in range(0, size):
+                    for col in range(0, size):
+
+                       # Here end is used to stay in same line
+                      if (row == col):
+                          print("1 ", end=" ")
+                      else:
+                          print("0 ", end=" ")
+                    print()
+
+Copy
+
+A matrix is the mirror image of another one if the elements of each row of the first matrix are equal to the reversed row of elements of the other matrix. For the mirror image of the identity matrix, it does not matter if the mirror image is left-right or top-bottom
+Examples of mirror image of identity matrix
+Input  : 2
+Output : 0 1
+         1 0
+Copy
+Input :  4
+Output : 0 0 0 1
+         0 0 1 0
+         0 1 0 0
+         1 0 0 0
+Copy
+
+Incompatible types passed as n should return the string "Error".
